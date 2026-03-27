@@ -32,7 +32,7 @@ Present a single deepening opportunity. Show:
 - **Dependency category**: See [REFERENCE.md](REFERENCE.md) for the four categories
 - **Test impact**: What existing tests would be replaced by boundary tests
 
-Interview the user relentlessly about every aspect of this candidate until you reach a shared understanding. Walk down each branch of the design tree (concept from "The Design of Design" by Fred Brooks), resolving dependencies between decisions one-by-one.
+Interview the user relentlessly about every aspect of this candidate until you reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.
 
 ### 3. Create Github Issue
 
