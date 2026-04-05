@@ -1,5 +1,5 @@
 ---
-name: write-a-issue
+name: write-an-issue
 description: Create a GitHub issue through user interview, codebase exploration, and module design. Use when the user wants to write an issue or plan a new feature.
 ---
 
