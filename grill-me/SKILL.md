@@ -7,6 +7,4 @@ Interview me relentlessly about every aspect of this plan until we reach a share
 
 If a question can be answered by exploring the codebase, explore the codebase instead.
 
-Be extremely concise. Sacrifice grammar for the sake of clarity.
-
 DON'T WRITE CODE.
