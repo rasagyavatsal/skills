@@ -1,26 +1,42 @@
 ---
 name: guidelines
-description: Guidelines for writing code.
+description: Enforce project-specific coding standards including unit testing, deep module design, security, and post-implementation validation for TypeScript and Flutter. Use when implementing new features, fixing bugs, or when the user mentions coding guidelines or validation scripts.
 ---
 
-1. create unit tests.
+# Guidelines
 
-2. create deep modules see deep-modules.md for more details.
+Follow these core mandates and post-implementation workflows to ensure code quality, security, and stability.
 
-3. code should be 100% secure, no security vulnerabilities.
+## Core Mandates
 
-4. after implementing the task:
+1.  **Unit Testing:** Always create unit tests for new logic. Verify that existing tests still pass.
+2.  **Deep Modules:** Favor "deep modules" as defined by John Ousterhout (*A Philosophy of Software Design*). A deep module has a small interface hiding a large implementation. This makes the codebase more testable and AI-navigable, allowing you to test at the boundary rather than internal details.
+3.  **Security:** Ensure code is 100% secure. Conduct a self-review for common vulnerabilities (e.g., injection, insecure data handling, improper authentication) before finalizing.
+4.  **No Commits:** Do not commit changes unless explicitly directed by the user.
 
-  * find and remove redundant code, if any.
+## Post-Implementation Workflow
 
-  * for typescript codebase:
-    a. run test script.
-    b. run type-check script to check for type errors.
-    c. run lint script to check for lint errors.
-    d. run build script to check for build errors.
+After implementing a task, perform the following validation steps:
 
-  * for flutter codebase:
-    a. run flutter test & flutter analyze & flutter docter to check for errors.
+### 1. Cleanup
+*   Identify and remove redundant or dead code introduced or discovered during the task.
 
-5. dont commit changes.
+### 2. Workspace Validation
 
+#### For TypeScript Codebases:
+*   **Test:** Run the project's test script (e.g., `npm test`, `yarn test`).
+*   **Type-Check:** Run the type-checking script (e.g., `npm run type-check`, `tsc --noEmit`).
+*   **Lint:** Run the linting script (e.g., `npm run lint`, `eslint .`).
+*   **Build:** Run the build script (e.g., `npm run build`) to ensure no build errors.
+
+#### For Flutter Codebases:
+*   **Test:** Run `flutter test`.
+*   **Analyze:** Run `flutter analyze`.
+*   **Doctor:** Run `flutter doctor` to ensure the environment is healthy.
+
+## Quick Checklist
+- [ ] Unit tests created and passing?
+- [ ] Module interfaces simplified (Deep Modules)?
+- [ ] Security review completed?
+- [ ] Redundant code removed?
+- [ ] Environment-specific validation scripts (TS/Flutter) executed successfully?
