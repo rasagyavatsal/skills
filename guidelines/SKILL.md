@@ -17,6 +17,7 @@ description: Guidelines for writing code.
     a. run test script.
     b. run type-check script to check for type errors.
     c. run lint script to check for lint errors.
+    d. run build script to check for build errors.
 
   * for flutter codebase:
     a. run flutter test & flutter analyze & flutter docter to check for errors.
