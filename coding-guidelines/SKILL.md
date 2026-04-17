@@ -9,6 +9,7 @@ Apply these rules whenever writing or changing code.
 
 ## Core rules
 
+- Before doing anything else, read `DESIGN-SYSTEM.md` and `UBIQUITOUS-LANGUAGE.md` if they exist in the repository.
 - Create or update unit tests for every behavior change.
 - Prefer deep modules: keep interfaces small and hide complexity behind stable boundaries.
 - Test behavior at module boundaries instead of exposing internals only to make them testable.
