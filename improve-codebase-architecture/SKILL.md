@@ -33,11 +33,3 @@ Present a single deepening opportunity. Show:
 - **Test impact**: What existing tests would be replaced by boundary tests
 
 Interview the user relentlessly about every aspect of this candidate until you reach a shared understanding. Walk down each branch of the design tree, resolving dependencies between decisions one-by-one.
-
-### 3. Create Github Issue
-
-Create a GitHub issue using `gh issue create`, analysing the candidate and the conversation. Do NOT ask the user to review before creating — just create it and share the URL. Refrain from creating GitHub issue until all the questions are answered.
-
-### Important notes
-
-- Be extremely concise in the entire process. Sacrifice grammar for the sake of clarity. 
