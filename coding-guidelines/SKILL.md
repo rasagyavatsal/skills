@@ -1,6 +1,6 @@
 ---
 name: coding-guidelines
-description: Enforce implementation guidelines for writing and modifying code: add unit tests, prefer deep modules, review changes for security, remove redundancy, and run repository verification commands. Use when the user asks to implement, edit, refactor, or review code and wants a consistent delivery checklist without committing changes.
+description: Enforce implementation guidelines for writing and modifying code. add unit tests, prefer deep modules, review changes for security, remove redundancy, and run repository verification commands. Use when the user asks to implement, edit, refactor, or review code and wants a consistent delivery checklist without committing changes.
 ---
 
 # Coding Guidelines
